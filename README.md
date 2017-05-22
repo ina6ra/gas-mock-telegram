@@ -1,1 +1,1 @@
-# gas-mock-telegram
+# telegram-gs
