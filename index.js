@@ -1,13 +1,4 @@
-var assert = require('chai').assert;
-var Sugar = require('sugar');
-var config = require('config');
+var mock = require('./init-mock');
 
-var gas = require('gas-mock');
-
-function get_mock() {
-  
-  var mymock = gas.globalMockDefault;
-  var glib = gas.require(__dirname+'/src', mymock);
-}
-
-module.exports = {get_mock};
+// NodeJS モジュールとして、srcフォルダを読み込む
+mock.gas.require(__dirname+'/src', mock.default);

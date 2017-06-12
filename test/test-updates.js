@@ -1,13 +1,12 @@
-var assert = require('chai').assert;
-var Sugar = require('sugar');
-var config = require('config');
+var mock = require('../init-mock');
+var assert = mock.assert;
+var Sugar = mock.Sugar;
+var config = mock.config;
 
-var gas = require('gas-mock');
-
-var mymock = gas.globalMockDefault;
+var mymock = mock.default;
 
 // ソースフォルダの指定はプロジェクトルートからの相対パス
-var glib = gas.require('./src', mymock);
+var glib = mock.gas.require('./src', mymock);
 
 describe('updates.js', function() {
 
