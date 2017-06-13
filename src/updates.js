@@ -1,4 +1,4 @@
-var TelegramAPI = function() {
+var TelegramClass = function() {
 
   this.getUpdateID = function(sp) {
     if(sp == null) sp = PropertiesService.getScriptProperties();
@@ -33,7 +33,7 @@ var TelegramAPI = function() {
 };
 
 var Telegram = {
-  BotAPI: new TelegramAPI()
+  BotAPI: new TelegramClass()
 };
 
 var BotAPI = Telegram.BotAPI;
