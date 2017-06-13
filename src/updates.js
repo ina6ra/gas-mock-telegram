@@ -1,14 +1,14 @@
 var TelegramAPI = function() {
 
-  this.getUpdateID = function() {
-    var sp = PropertiesService.getScriptProperties();
+  this.getUpdateID = function(sp) {
+    if(sp == null) sp = PropertiesService.getScriptProperties();
     var uid = sp.getProperty('update_id');
     if(uid == null) uid = 0;
     return Number(uid);
   }
 
-  this.getApiToken = function() {
-    var sp = PropertiesService.getScriptProperties();
+  this.getApiToken = function(sp) {
+    if(sp == null) sp = PropertiesService.getScriptProperties();
     var token = sp.getProperty('api_token');
     return token;
   }

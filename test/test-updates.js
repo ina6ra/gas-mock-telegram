@@ -30,6 +30,7 @@ describe('updates.js', function() {
       assert.typeOf(uid, 'Number');
     });
     it('NaN 対応（文字列を無理矢理 数値変換した場合）');
+    it('ScriptProperties が引数として渡された場合');
   });
 
   // test for getApiToken()
@@ -38,6 +39,7 @@ describe('updates.js', function() {
       token = glib.Telegram.BotAPI.getApiToken();
       assert.equal(token, setup['ScriptProperties']['api_token']);
     });
+    it('ScriptProperties が引数として渡された場合');
   });
 
   // test for getApiUrl()
