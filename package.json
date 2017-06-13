@@ -2,6 +2,7 @@
   "dependencies": {
     "chai": "^4.0.2",
     "config": "^1.26.1",
+    "gas-mock": "https://github.com/ina6ra/gas-mock",
     "mocha": "^3.4.2",
     "sugar": "^2.0.4"
   }
