@@ -1,4 +1,18 @@
 {
+  "name": "telegram-gs",
+  "description": "Telegram Library for Google Apps Script",
+  "version": "0.0.1",
+  "homepage": "https://github.com/ina6ra/telegram-gs",
+  "author": {
+    "name": "Kazuhiro Inari",
+    "url": "http://qiita.com/in6ra"
+  },
+  "main": "index.js",
+  "licenses": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ina6ra/telegram-gs.git"
+  },
   "dependencies": {
     "chai": "^4.0.2",
     "config": "^1.26.1",
