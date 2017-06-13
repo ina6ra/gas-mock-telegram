@@ -1,0 +1,24 @@
+{
+  "Setup": {
+    "ScriptProperties": {
+      "update_id": 123456,
+      "api_token": "123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11"
+    },
+    "telegraApi": {
+      "url": "https://api.telegram.org/bot123456:ABC-DEF1234ghIkl-zyx57W2v1u123ew11/getUpdates"
+    }
+  },
+  "Fixture": {
+    "getUpdates": {
+      "webhook": {
+        "ok": false,
+        "error_code": 409,
+        "description": "Conflict: can't use getUpdates method while webhook is active"
+      },
+      "Array": {
+        "ok": true,
+        "result": []
+      }
+    }
+  }
+}
